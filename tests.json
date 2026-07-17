@@ -1,0 +1,35 @@
+[
+  {
+    "test_id": "NET_POS_01",
+    "test_name": "Positive: network time sync within 5 seconds threshold",
+    "scenario_type": "network_time_request",
+    "params": {
+      "url": "https://tools.aimylogic.com/api/now?tz=Asia/Novosibirsk&format=dd/MM/yyyy",
+      "threshold_seconds": 5
+    },
+    "expected_result": true
+  },
+
+  {
+    "test_id": "CPU_NEG_01",
+    "test_name": "Negative: CPU usage is under 1 percent for 30 seconds",
+    "scenario_type" : "cpu_usage",
+    "params": {
+      "max_load": 1,
+      "duration_seconds": 30
+
+    },
+    "expected_result": false
+  },
+  {
+    "test_id": "CPU_POS_01",
+    "test_name": "Positive: CPU usage is under 50 percent for 30 seconds",
+    "scenario_type" : "cpu_usage",
+    "params": {
+      "max_load": 50,
+      "duration_seconds": 30
+
+    },
+    "expected_result": true
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "test_id": "SYS_NEG_01",
+    "test_name": "Negative: Runner handles missing scenario type",
+    "scenario_type": "unknown_request",
+    "params": {
+
+    },
+    "expected_result": false
+  }
+]
